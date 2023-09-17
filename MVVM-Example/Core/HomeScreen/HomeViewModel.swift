@@ -6,21 +6,19 @@
 //
 
 import Foundation
-import UIKit
 
 protocol HomeViewModelInterface {
-    var view: HomeScreenInterface? {get set}
+   var view: HomeScreenInterface? { get set }
     func viewDidLoad()
 }
 
 final class HomeViewModel {
-    weak var view: HomeScreenInterface?
+   weak var view: HomeScreenInterface?
 }
 
 extension HomeViewModel: HomeViewModelInterface {
     func viewDidLoad() {
+        view?.configureAll()
         
     }
-    
-    
 }
