@@ -20,7 +20,10 @@ class MovieCollectionViewCell: UICollectionViewCell {
     }
     
     private func configureCell(){
-        backgroundColor = .orange
+        backgroundColor = .systemGray
+        layer.cornerRadius = CGFloat.dWidth/40
+        layer.borderColor = UIColor.black.cgColor
+        layer.borderWidth = CGFloat.dWidth/59
         
     }
 }

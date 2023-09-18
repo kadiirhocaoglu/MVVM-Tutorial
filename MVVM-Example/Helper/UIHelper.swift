@@ -13,7 +13,7 @@ enum UIHelper {
         
         layout.scrollDirection = .vertical
         layout.itemSize = CGSize(width: .dWidth, height: .dHeight/3)
-        
+        layout.minimumLineSpacing = CGFloat.dWidth/12
         return layout
     }
 }

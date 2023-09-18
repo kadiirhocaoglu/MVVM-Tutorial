@@ -13,6 +13,7 @@ enum APIURLs: String {
     case lang_page = "&language=en-US&page="
     
     static func movies(page: Int) -> String {
-        return "\(base_URL)\(api_KEY)\(lang_page)\(page)"
+       
+        return "\(APIURLs.base_URL.rawValue)\(APIURLs.api_KEY.rawValue)\(APIURLs.lang_page.rawValue)\(page)"
     }
 }
